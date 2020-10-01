@@ -26,6 +26,7 @@ clear_cmd = "clear"
 
 os_name = platform.system()
 
+# adding driver path
 driver_path = "./chromedriver"
 if os_name == 'Linux':
     driver_path = './chromedriver'
@@ -41,6 +42,7 @@ with open('data.json') as f:
   questions = data['questions']
   answers = data['answers']  
 
+# function for clearing terminal screen
 def clear():
     return os.system(clear_cmd)
 
